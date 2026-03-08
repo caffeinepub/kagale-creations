@@ -11,6 +11,7 @@ import {
   Linkedin,
   Loader2,
   Mail,
+  MapPin,
   Menu,
   MessageCircle,
   Palette,
@@ -1950,7 +1951,7 @@ function ContactSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 data-ocid="contact.whatsapp.button"
-                href="https://wa.me/1234567890"
+                href="https://wa.me/919632114269"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 px-6 py-4 rounded-xl flex-1 transition-all duration-300 group"
@@ -1981,7 +1982,7 @@ function ContactSection() {
               </a>
               <a
                 data-ocid="contact.call.button"
-                href="tel:+1234567890"
+                href="tel:+919632114269"
                 className="flex items-center gap-3 px-6 py-4 rounded-xl flex-1 transition-all duration-300"
                 style={{
                   background: "oklch(0.75 0.2 200 / 10%)",
@@ -2005,7 +2006,7 @@ function ContactSection() {
                   <div className="font-display text-xs font-bold tracking-wider">
                     CALL US
                   </div>
-                  <div className="text-xs opacity-70">+1 (234) 567-890</div>
+                  <div className="text-xs opacity-70">+91 96321 14269</div>
                 </div>
               </a>
             </div>
@@ -2023,7 +2024,33 @@ function ContactSection() {
                 className="text-sm"
                 style={{ color: "oklch(0.75 0.04 240)" }}
               >
-                hello@kagalecreations.com
+                nageshkagale@gmail.com
+              </span>
+            </div>
+
+            {/* Address */}
+            <div
+              className="flex items-start gap-3 p-4 rounded-xl"
+              style={{
+                background: "oklch(1 0 0 / 3%)",
+                border: "1px solid oklch(1 0 0 / 8%)",
+              }}
+            >
+              <MapPin
+                size={18}
+                style={{
+                  color: "oklch(0.65 0.25 290)",
+                  flexShrink: 0,
+                  marginTop: 2,
+                }}
+              />
+              <span
+                className="text-sm leading-relaxed"
+                style={{ color: "oklch(0.75 0.04 240)" }}
+              >
+                Mangasuli, Tq. Kagwad,
+                <br />
+                Dist. Belagavi – 591234
               </span>
             </div>
 
@@ -2151,7 +2178,7 @@ function Footer({ onNavClick }: { onNavClick: (href: string) => void }) {
                 {
                   Icon: SiWhatsapp,
                   label: "WhatsApp",
-                  href: "https://wa.me/1234567890",
+                  href: "https://wa.me/919632114269",
                 },
               ].map(({ Icon, label, href }) => (
                 <a
@@ -2189,14 +2216,14 @@ function Footer({ onNavClick }: { onNavClick: (href: string) => void }) {
                 style={{ color: "oklch(0.55 0.04 240)" }}
               >
                 <Mail size={12} />
-                hello@kagalecreations.com
+                nageshkagale@gmail.com
               </div>
               <div
                 className="flex items-center gap-2 text-xs"
                 style={{ color: "oklch(0.55 0.04 240)" }}
               >
                 <Phone size={12} />
-                +1 (234) 567-890
+                +91 96321 14269
               </div>
             </div>
           </div>
@@ -2234,7 +2261,7 @@ function FloatingWhatsApp() {
   return (
     <a
       data-ocid="whatsapp.floating.button"
-      href="https://wa.me/1234567890"
+      href="https://wa.me/919632114269"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
